@@ -1,0 +1,8 @@
+<div class="post">
+    <h3>{{postItem.title}}</h3>
+    <p class="date">{{postItem.createdAt | date: 'short'}}</p>
+    <p>{{postItem.content}}</p>
+
+    <button style="margin-right: 5px" class="btn btn-success" (click)="onLoveIts()">love it!</button>
+    <button class="btn btn-danger" (click)="onDontLoveIts()">Don't love it!</button>
+</div>
